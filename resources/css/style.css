@@ -6,38 +6,40 @@ body {
 }
 
 header {
-  height: 90vh;
+  height: 100vh;
   display: flex;
-  align-items: center;
-  position: relative;
+  flex-direction: column;
+  /* align-items: center; */
+  /* position: relative; */
   margin: 0;
   padding: 0;
 }
 
 .header-content {
   width: 100%;
-  height: 100px;
+  /* height: 100px; */
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: fixed;
-  top: 0;
+  /* position: fixed; */
+  /* top: 0;
   left: 0;
-  z-index: 1;
-  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1; */
+  background-color: rgba(0, 0, 0, 1);
 }
 
 .header-logo {
-  padding: 10px;
+  padding: 5px 30px;
 }
 
 .header-logo img {
-  width: 80px;
-  height: 80px;
+  width: 60px;
+  height: 60px;
 }
 
 .header-nav {
   display: flex;
+  padding-right: 30px;
 }
 
 .header-nav ul {
@@ -59,16 +61,19 @@ header {
 
 .header-slider {
   width: 100%;
-  height: 90vh;
-  position: absolute;
-  top: 0;
-  left: 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  /* position: absolute; */
+  /* top: 0;
+  left: 0; */
   z-index: 0;
 }
 
 .header-slide {
   width: calc(100% - 40px);
-  height: calc(90vh - 180px);
+  /* height: auto; */
+  flex: 1;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -98,11 +103,20 @@ header {
   background-color: #f7f7f7;
 }
 
+.our-dogs {
+  padding: 5rem 0;
+  background-color: #f7f7f7;
+}
+
 .services h2 {
   font-size: 36px;
   font-weight: bold;
   text-align: center;
   margin-bottom: 2rem;
+}
+
+.h-special {
+  color: #ff0000;
 }
 
 .services .service {
@@ -204,8 +218,8 @@ footer {
 }
 
 footer p {
-  font-size: 60%;
+  font-size: 80%;
   font-weight: lighter;
   margin: 0;
-  color: #7a7a7a;
+  /* color: #7a7a7a; */
 }
