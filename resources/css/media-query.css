@@ -12,6 +12,9 @@
     justify-content: center;
   }
   .service-card {
-    width: 90%;
+    width: 100%;
+  }
+  .container {
+    padding: 20px;
   }
 }
