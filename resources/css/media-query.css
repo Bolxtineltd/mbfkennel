@@ -1,0 +1,17 @@
+@media only screen and (max-width: 1200px) {
+}
+
+@media only screen and (max-width: 1200px) {
+}
+
+@media only screen and (max-width: 1200px) {
+}
+
+@media only screen and (max-width: 479px) {
+  .services-container {
+    justify-content: center;
+  }
+  .service-card {
+    width: 90%;
+  }
+}
