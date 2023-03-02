@@ -64,9 +64,6 @@ header {
   flex: 1;
   display: flex;
   flex-direction: column;
-  /* position: absolute; */
-  /* top: 0;
-  left: 0; */
   z-index: 0;
 }
 
@@ -100,18 +97,30 @@ header {
 
 .services {
   padding: 3rem 0;
-  background-color: #f7f7f7;
+  background-color: #e1e1e1;
+  background-image: -webkit-linear-gradient(
+      rgb(0, 74, 173, 0.8),
+      rgb(0, 74, 173, 0.8)
+    ),
+    url(../images/slide1.png);
+  background-image: linear-gradient(rgba(239, 3, 3, 0.9), rgb(239, 3, 3, 0.5)),
+    url(../images/slide1.png);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .services h2 {
   font-size: 36px;
   font-weight: bold;
-  text-align: center;
   margin-bottom: 2rem;
 }
-
 .h-special {
   color: #ff0000;
+}
+
+.services .h-special {
+  color: #fff;
 }
 
 .services .service {
@@ -150,6 +159,16 @@ header {
   padding: 60px 0;
 }
 
+.circle-avarta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  background-color: #ff0000;
+  border-radius: 50%;
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -172,13 +191,15 @@ header {
 
 .service-card-content {
   padding: 30px;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center; /* for centering any text content */
 }
 
 .service-card-content i {
-  font-size: 4.5em;
-  text-align: center;
-  color: #ff0000;
+  color: #ffffff;
 }
 
 .service-card-content h3 {
@@ -271,7 +292,7 @@ header {
   align-items: center;
   width: 50px;
   height: 50px;
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: #ff0000;
   border-radius: 50%;
   cursor: pointer;
   transition: background-color 0.2s ease;
@@ -293,13 +314,14 @@ header {
 .our-dogs .scroll-left i,
 .our-dogs .scroll-right i {
   font-size: 1.5rem;
-  color: #333;
+  color: #f1f1f1;
 }
 
 /*Scroll right and left*/
 
 .about-us {
   padding: 3rem 0;
+  background-color: #f2f2f2;
 }
 
 footer {
