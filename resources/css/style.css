@@ -1,3 +1,4 @@
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -9,22 +10,13 @@ header {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
-  /* position: relative; */
-  margin: 0;
-  padding: 0;
 }
 
 .header-content {
   width: 100%;
-  /* height: 100px; */
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* position: fixed; */
-  /* top: 0;
-  left: 0;
-  z-index: 1; */
   background-color: rgba(0, 0, 0, 1);
 }
 
@@ -56,7 +48,12 @@ header {
 .header-nav a {
   color: #fff;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 90%;
+}
+
+.header-nav a:hover,
+.header-nav a:active {
+  color: #ff0000;
 }
 
 .header-slider {
@@ -103,7 +100,11 @@ header {
       rgb(0, 74, 173, 0.8)
     ),
     url(../images/slide1.png);
-  background-image: linear-gradient(rgba(239, 3, 3, 0.9), rgb(239, 3, 3, 0.5)),
+  background-image: linear-gradient(
+      rgba(239, 3, 3, 0.9),
+      rgba(239, 3, 3, 0.8),
+      rgb(239, 3, 3, 0.1)
+    ),
     url(../images/slide1.png);
   background-position: top;
   background-repeat: no-repeat;
@@ -322,6 +323,21 @@ header {
 .about-us {
   padding: 3rem 0;
   background-color: #f2f2f2;
+  border-top: 2px solid #ff0000;
+  border-bottom: 2px solid #000;
+}
+
+.about-us .row {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.about-us .col {
+  width: 50%;
+  flex-shrink: 0;
+  margin-right: 20px;
+  padding: 1.5em 0;
 }
 
 footer {
