@@ -1,18 +1,24 @@
-// $(document).ready(function() {
-//     var currentIndex = 0;
-//     var slides = $(".header-slide");
-//     var slideCount = slides.length;
-
-//     slides.hide().eq(currentIndex).show();
-
-//     setInterval(function() {
-//       slides.eq(currentIndex).fadeOut(1000);
-//       currentIndex = (currentIndex + 1) % slideCount;
-//       slides.eq(currentIndex).fadeIn(1000);
-//     }, 5000);
-//   });
-
 $(document).ready(function () {
+  $(".js--about-section").waypoint(
+    function (direction) {
+      $(".about-header").addClass("animate__animated animate__backInLeft animate__delay-6s");
+    },
+    { offset: "70%" }
+  );
+
+  $(".js--services-section").waypoint(
+    function (direction) {
+      $(".services-header").addClass("animate__animated animate__backInLeft");
+    },
+    { offset: "70%" }
+  );
+  $(".js--dogs-section").waypoint(
+    function (direction) {
+      $(".dogs-header").addClass("animate__animated animate__backInLeft");
+    },
+    { offset: "70%" }
+  );
+
   var currentIndex = 0;
   var slides = $(".header-slide");
   var slideCount = slides.length;
@@ -26,6 +32,7 @@ $(document).ready(function () {
     });
   }, 5000);
 
+  //Slider effect starts
   var container = $(".container");
   var scrollLeft = $(".scroll-left");
   var scrollRight = $(".scroll-right");
