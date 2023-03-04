@@ -17,4 +17,30 @@
   .container {
     padding: 20px;
   }
+
+  .row {
+    flex-direction: column;
+  }
+
+  .our-dogs .row {
+    flex-direction: row;
+  }
+
+  .about-us .col {
+    width: 100%;
+  }
+
+  .our-dogs .col {
+    width: 100%;
+    flex-shrink: 0;
+    height: 300px;
+    margin-right: 10px;
+    border-radius: 20px 0 20px 0;
+    background-color: #ddd;
+  }
+
+  footer .col:first-child {
+    text-align: center;
+    margin-bottom: 20px;
+  }
 }
