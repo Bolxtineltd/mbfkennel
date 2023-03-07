@@ -17,7 +17,7 @@
       rel="stylesheet"
     />
 
-    <title>MBF Kennel :: About Us</title>
+    <title>MBF Kennel :: Contact Us</title>
     <script
       src="https://kit.fontawesome.com/0e57b69dee.js"
       crossorigin="anonymous"
@@ -32,82 +32,89 @@
         <nav class="header-nav">
           <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="#" class="active">About Us</a></li>
+            <li><a href="about-us.html">About Us</a></li>
             <li><a href="services.html">Services</a></li>
-            <li><a href="contact-us.html">Contact Us</a></li>
+            <li><a href="#" class="active">Contact Us</a></li>
           </ul>
         </nav>
       </div>
       <div class="text-overlay">
-        <h1>About Us</h1>
-        <p>We are your number one dog breeder</p>
+        <h1>Contact Us</h1>
+        <p>We can't wait to hear from you</p>
       </div>
     </header>
 
     <section class="about-us js--about-section">
       <div class="container">
+        <h3 class="contact-header">
+          We want to <span class="h-special">read from</span> you
+        </h3>
         <div class="row">
-          <div class="col">
-            <h3 class="">Get to <span class="h-special">know</span> us</h3>
-            <p class="lead">
-              Welcome to [Company Name], located in [Location]. We are a team of
-              passionate and knowledgeable individuals who are experts in
-              various dog breeds and their specific traits. Our kennel is
-              committed to providing our clients with the best possible service
-              and quality dogs.
-            </p>
-
-            <p class="lead">
-              We take great pride in our dedication to the care and well-being
-              of our dogs, as well as our customers' satisfaction. We believe
-              that dogs are not just pets but are an important part of families
-              and deserve the best possible care.
-            </p>
-
-            <p class="lead">
-              Our kennel has a rich history that began with our founder's
-              passion for dogs. We specialize in breeding and raising
-              exceptional dogs for loving homes, and our mission is to provide
-              our clients with the highest quality dogs and exceptional customer
-              service. We are committed to ethical breeding practices, and our
-              focus is on producing dogs that have good health, sound
-              temperament, and are well socialized.
-            </p>
-
-            <p class="lead">
-              Our team consists of experienced and passionate individuals who
-              are experts in various dog breeds and their specific traits. We
-              carefully select the dogs in our breeding program, choosing only
-              those with exceptional health, temperament, and conformation. We
-              provide a safe, clean, and comfortable environment for our dogs,
-              and they receive the highest quality care, including regular
-              veterinary checkups and socialization.
-            </p>
-
-            <p class="lead">
-              At MBF Kennel, we understand that every dog is unique, and we
-              provide personalized attention to each of our dogs. We have a team
-              of experienced and dedicated professionals who are experts in
-              their fields and have a deep understanding of different dog breeds
-              and their needs.
-            </p>
-
-            <p class="lead">
-              Whether you are looking for a new addition to your family or need
-              advice on dog care and training, our team is here to help. We are
-              committed to helping our clients find the perfect dog for their
-              lifestyle and providing ongoing support throughout the dog's life.
-            </p>
-
-            <p class="lead">
-              Thank you for considering [Company Name] for your dog's needs. We
-              look forward to providing you with exceptional service and the
-              highest quality dogs."
-            </p>
-          </div>
-          <div class="col">
-            <img src="resources/images/slide2.png" class="about-img" />
-          </div>
+          <form method="" class="contact-form">
+            <div class="row">
+              <div class="col span_1_of_3 contact-label">
+                <label for="name">Name</label>
+              </div>
+              <div class="col span_2_of_3">
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  placeholder="Enter your name"
+                  required
+                />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col span_1_of_3 contact-label">
+                <label for="email">Email</label>
+              </div>
+              <div class="col span_2_of_3">
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Enter your email"
+                  required
+                />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col span_1_of_3 contact-label">
+                <label class="newsl" for="newsletter">Newsletter</label>
+              </div>
+              <div class="col span_2_of_3">
+                <input
+                  type="checkbox"
+                  name="newsletter"
+                  id="newsletter"
+                  checked
+                />Yes, please
+              </div>
+            </div>
+            <div class="row">
+              <div class="col span_1_of_3 contact-label">
+                <label for="newsmessage">Drop us a line</label>
+              </div>
+              <div class="col span_2_of_3">
+                <textarea
+                  type="checkbox"
+                  name="newsmessage"
+                  id="newsmessage"
+                  checked
+                >
+    Your message here
+    </textarea
+                >
+              </div>
+            </div>
+            <div class="row">
+              <div class="col span_1_of_3">&nbsp;</div>
+              <div class="col span_2_of_3">
+                <input type="submit" value="Send It!" />
+              </div>
+            </div>
+          </form>
         </div>
       </div>
     </section>

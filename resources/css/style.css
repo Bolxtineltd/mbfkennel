@@ -573,3 +573,34 @@ address h3 {
   align-items: center;
   align-content: center;
 }
+
+.contact-form {
+  text-align: left;
+  width: 60%;
+  margin: 0 auto;
+  color: #555;
+}
+
+.contact-header {
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 250%;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 8px;
+  background-color: #fff;
+  border-radius: 5px;
+  border: 1px solid #555;
+}
+
+input[type="checkbox"] {
+  margin: 10px 5px;
+}
+
+input[type="submit"] {
+  border: 0;
+}
