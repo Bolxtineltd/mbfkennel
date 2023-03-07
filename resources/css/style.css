@@ -18,11 +18,43 @@ header {
   flex-direction: column;
 }
 
+section {
+  padding: 3em 0;
+}
+
+header.others {
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #e1e1e1;
+  background-image: -webkit-linear-gradient(
+      rgba(10, 10, 10, 1),
+      rgba(10, 10, 10, 0.7)
+    ),
+    url(../images/section_bg.jpg);
+  background-image: linear-gradient(rgba(10, 10, 10, 1), rgba(10, 10, 10, 0.7)),
+    url(../images/section_bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 h2 {
   font-size: 200%;
   font-weight: bold;
   margin: 0 0 1rem 0;
   text-align: center;
+}
+
+.text-overlay {
+  max-width: 1140px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.text-overlay h1,
+p {
+  color: #f1f1f1;
 }
 
 .lead {
@@ -375,6 +407,38 @@ h2:after {
   /* padding: 1.5em 0; */
 }
 
+.about-img {
+  display: inline;
+  width: 100%;
+  border-radius: 20px 0px 20px 0px;
+}
+
+.about-practices {
+  padding-left: 0px;
+}
+
+.about-practices ul {
+  padding-left: 0;
+  list-style-type: none;
+}
+
+.about-practices ul li {
+  padding-left: 2rem;
+  background-image: url("../images/icons/checkmark.svg");
+  background-position: 0 0;
+  background-size: 1.2rem 1.2rem;
+  background-repeat: no-repeat;
+  margin-bottom: 10px;
+}
+
+.about-practices ul li svg {
+  fill: red; /* change the fill color to red */
+}
+
+.about-practices .sp {
+  font-size: 130%;
+}
+
 footer {
   background-color: #000;
   color: #fff;
@@ -430,4 +494,50 @@ footer p {
 
 address h3 {
   margin-bottom: 10px;
+}
+
+.mission {
+  padding: 3rem 0;
+  background-color: #e1e1e1;
+  background-image: -webkit-linear-gradient(
+      rgba(7, 6, 6, 0.9),
+      rgba(8, 7, 7, 0.8)
+    ),
+    url(../images/section_bg.jpg);
+  background-image: linear-gradient(rgba(249, 4, 4, 0.9), rgba(8, 7, 7, 0.9)),
+    url(../images/section_bg.jpg);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #fff;
+}
+
+.mission .lead {
+  color: #fff;
+}
+
+.care {
+  background-color: #f5f0f0;
+}
+
+.care img {
+  width: 30px;
+}
+
+.care h3 {
+  margin-bottom: 20px;
+}
+
+.care-header {
+  margin-bottom: 50px;
+}
+
+.care .col {
+  width: 32%;
+  flex-shrink: 0;
+  margin-right: 30px;
+  text-align: center;
+  align-items: center;
+  align-content: center;
 }
