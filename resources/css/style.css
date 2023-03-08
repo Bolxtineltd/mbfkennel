@@ -6,6 +6,7 @@ body {
   font-weight: 400;
 }
 
+h1,
 h2,
 h3,
 h4 {
@@ -56,6 +57,11 @@ h2 {
 .text-overlay h1,
 p {
   color: #f1f1f1;
+}
+
+.text-overlay h1 {
+  font-size: 400%;
+  margin-top: 20px;
 }
 
 .lead {
@@ -117,6 +123,16 @@ h2:after {
 .header-nav a:hover,
 .header-nav a:active {
   color: #ff0000;
+  border-bottom: 3px solid #fff;
+  -webkit-transition: border-bottom 0.5s;
+  transition: border-bottom 0.5s;
+}
+
+.header-nav a.active {
+  color: #ff0000;
+  border-bottom: 3px solid #fff;
+  -webkit-transition: border-bottom 0.5s;
+  transition: border-bottom 0.5s;
 }
 
 .header-slider {
