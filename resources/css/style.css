@@ -432,7 +432,15 @@ h2:after {
   /* width: 100%; */
 }
 
-.about-us .col {
+.services-main {
+  background: linear-gradient(0.25turn, #fff, #fff, #f0adad);
+}
+.services-main .row {
+  margin-bottom: 30px;
+}
+
+.about-us .col,
+.services-main .col {
   width: 50%;
   flex-shrink: 0;
   margin-right: 20px;
